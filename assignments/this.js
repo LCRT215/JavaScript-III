@@ -27,7 +27,7 @@
 // }
 // console.log(introduce.apply(teacher, skills));
 
-/* 3. New Binding: Binds 'new' attributes from a new variable to a preexisting function  */
+/* 3. New Binding: Constructor function. Binds 'new' attributes from a new variable to a preexisting function  */
 
 // function student(grade, math, science) {
 //   this.grade = grade;

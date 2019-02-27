@@ -29,21 +29,21 @@
 
 /* 3. New Binding: Constructor function. Binds 'new' attributes from a new variable to a preexisting function  */
 
-// function student(grade, math, science) {
-//   this.grade = grade;
-//   this.math = math;
-//   this.science = science;
-//   this.statement = function() {
-//     console.log(
-//       `This student is in ${this.grade} grade and will be taking ${
-//         this.math
-//       } and ${this.science} next semester.`
-//     );
-//   };
-// }
+function student(grade, math, science) {
+  this.grade = grade;
+  this.math = math;
+  this.science = science;
+  this.statement = function() {
+    console.log(
+      `This student is in ${this.grade} grade and will be taking ${
+        this.math
+      } and ${this.science} next semester.`
+    );
+  };
+}
 
-// const adamSmith = new student("4th", "Algebra", "Biology");
-// console.log(adamSmith.statement());
+const adamSmith = new student("4th", "Algebra", "Biology");
+console.log(adamSmith.statement());
 
 /* 4. This points to its self but binds to window*/
 
